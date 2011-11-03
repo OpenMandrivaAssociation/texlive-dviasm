@@ -1,3 +1,9 @@
+# revision 18835
+# category Package
+# catalog-ctan /dviware/dviasm
+# catalog-date 2010-01-16 10:15:09 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-dviasm
 Version:	20100116
 Release:	1
@@ -38,6 +44,7 @@ preprint number or watermarks.
 %files
 %{_bindir}/dviasm
 %{_texmfdistdir}/scripts/dviasm/dviasm.py
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
