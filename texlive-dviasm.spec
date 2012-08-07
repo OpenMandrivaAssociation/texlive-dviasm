@@ -1,12 +1,12 @@
-# revision 18835
+# revision 26313
 # category Package
 # catalog-ctan /dviware/dviasm
-# catalog-date 2010-01-16 10:15:09 +0100
+# catalog-date 2012-04-10 15:00:16 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-dviasm
-Version:	20100116
-Release:	2
+Version:	20120410
+Release:	1
 Summary:	A utility for editing DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviasm
