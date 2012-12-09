@@ -50,3 +50,21 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120410-1
++ Revision: 812230
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100116-2
++ Revision: 751177
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100116-1
++ Revision: 718276
+- texlive-dviasm
+- texlive-dviasm
+- texlive-dviasm
+- texlive-dviasm
+
