@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-dviasm
-Version:	20190206
+Version:	20190228
 Release:	1
 Summary:	A utility for editing DVI files
 Group:		Publishing
