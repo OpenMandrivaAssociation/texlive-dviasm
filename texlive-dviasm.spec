@@ -1,17 +1,11 @@
-# revision 26313
-# category Package
-# catalog-ctan /dviware/dviasm
-# catalog-date 2012-04-10 15:00:16 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-dviasm
-Version:	20190228
-Release:	2
+Version:	64430
+Release:	1
 Summary:	A utility for editing DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviasm
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviasm.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviasm.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ binary format. It supports advanced features such as adding a
 preprint number or watermarks.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,32 +33,14 @@ preprint number or watermarks.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/dviasm/dviasm.py dviasm
+ln -sf %{_texmfdistdir}/scripts/dviasm/dviasm.py dviasm
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120410-1
-+ Revision: 812230
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100116-2
-+ Revision: 751177
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100116-1
-+ Revision: 718276
-- texlive-dviasm
-- texlive-dviasm
-- texlive-dviasm
-- texlive-dviasm
-
