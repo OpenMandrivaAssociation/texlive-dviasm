@@ -1,6 +1,6 @@
 Name:		texlive-dviasm
 Version:	64430
-Release:	1
+Release:	2
 Summary:	A utility for editing DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviasm
