@@ -1,5 +1,5 @@
 Name:		texlive-dviasm
-Version:	68043
+Version:	71902
 Release:	1
 Summary:	A utility for editing DVI files
 Group:		Publishing
