@@ -3,7 +3,7 @@ Version:	71902
 Release:	1
 Summary:	A utility for editing DVI files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/dviware/dviasm
+URL:		https://www.ctan.org/tex-archive/dviware/dviasm
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviasm.r%{version}.tar.xz
 BuildArch:	noarch
