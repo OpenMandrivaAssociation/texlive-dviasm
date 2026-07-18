@@ -1,5 +1,6 @@
 %global tl_name dviasm
 %global tl_revision 71902
+%global tl_bin_links dviasm:%{_texmfdistdir}/scripts/dviasm/dviasm.py
 
 Name:		texlive-%{tl_name}
 Version:	%{tl_revision}
@@ -14,6 +15,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(dviasm.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 A Python script to support changing or creating DVI files via
